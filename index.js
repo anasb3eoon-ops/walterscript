@@ -1,3 +1,8 @@
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => res.send('Bot is Online!'));
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Server running on port ${port}`));
 const axios = require('axios');
 const crypto = require('crypto');
 
